@@ -1,0 +1,370 @@
+.row#center {
+    position: relative;
+    top: -190px;
+}
+
+div.polygon * {
+    margin: 0;
+}
+
+ul#main {
+    list-style-type: none;
+}
+
+ul#main li {
+    height: 110px;
+}
+
+.polygon-left {
+
+    width: 515px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 18px 30px;
+    position: relative;
+    margin: 40px 0;
+    min-height: 214px;
+}
+
+.polygon-left:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    left: 503px;
+    top: 89px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.polygon-left:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 80px;
+    left: 465px;
+    background-color: #ffffff;
+}
+
+.polygon-right {
+    width: 515px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 17px 30px;
+    position: relative;
+    margin: 40px 0;
+    min-height: 214px;
+}
+
+.polygon-right:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    left: -12px;
+    top: 89px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.polygon-right:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 80px;
+    left: 1px;
+    background-color: #ffffff;
+}
+
+.circle:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #11c4a4;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.circle {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #bebebe;
+    top: -167px;
+    left: 555px;
+}
+
+.branch {
+    position: relative;
+    background-color: #ffffff;
+    border-left: solid 3px #bebebe;
+    border-right: solid 3px #bebebe;
+    width: 15px;
+    height: 51px;
+    top: -242px;
+    left: 562px;
+}
+
+.branch-bottom {
+    position: relative;
+    background-color: #ffffff;
+    border-left: solid 3px #bebebe;
+    border-right: solid 3px #bebebe;
+    width: 15px;
+    height: 85px;
+    top: -222px;
+    left: 562px;
+}
+
+.branch-top {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 9px;
+    left: 565px;
+    height: 100px;
+    top: 96px;
+}
+
+.alg-right {
+    position: relative;
+    left: 625px;
+}
+
+tr>td:nth-child(2n) {
+    padding: 0 30px;
+}
+
+tr>td:nth-child(1) {
+    padding: 30px 0;
+}
+
+div.polygon h3 {
+    margin-bottom: 10px;
+    font-family: Lato-Bold;
+}
+
+td>p {
+    font-family: Lato-Regular;
+    font-size: 16px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (max-width:1210px) {
+
+    .polygon-right {
+
+        width: 515px;
+    }
+
+    .polygon-right:before {
+        left: 503px;
+        top: 89px;
+    }
+
+    .polygon-right:after {
+        width: 50px;
+        top: 80px;
+        left: 465px;
+    }
+
+    .alg-right {
+        position: relative;
+        left: 0px;
+    }
+
+    ul#main li {
+        height: 200px;
+    }
+
+    .row#center {
+        top: -280px;
+    }
+
+    .branch-top {
+        top: 183px;
+    }
+
+    .branch-bottom {
+        height: 176px;
+    }
+
+    .bs-docs-container {
+        height: 1680px;
+    }
+
+
+
+}
+
+@media screen and (max-width:991px) {
+    .navbar-right {
+        float: left!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        display: none;
+    }
+
+    .container#tree {
+        height: 1680px;
+    }
+}
+
+@media screen and (max-width:655px) {
+
+    .polygon-left {
+        width: 465px;
+        padding: 4px 14px;
+        max-height: 215px;
+    }
+
+    .polygon-left:before {
+        left: 453px;
+    }
+
+    .polygon-left:after {
+        left: 414px;
+    }
+
+    .polygon-right {
+        width: 465px;
+        padding: 4px 14px;
+        max-height: 215px;
+    }
+
+    .polygon-right:before {
+        left: 453px;
+    }
+
+    .polygon-right:after {
+        left: 414px;
+    }
+
+    .circle {
+        left: 490px;
+    }
+
+    .branch {
+        left: 497px;
+    }
+
+    .branch-top {
+        left: 500px;
+    }
+
+    .branch-bottom {
+        left: 497px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    img {
+        display: none;
+    }
+
+    .polygon-left {
+        width: 400px;
+        padding: 15px 15px;
+        height: auto;
+        /*max-height: 215px;*/
+    }
+
+    .polygon-left:before {
+        display: none;
+    }
+
+    .polygon-left:after {
+        display: none;
+    }
+
+    .polygon-right {
+        width: 400px;
+        padding: 15px 15px;
+        max-height: 215px;
+    }
+
+    .polygon-right:before {
+        display: none;
+    }
+
+    .polygon-right:after {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .branch {
+        display: none;
+    }
+
+    .branch-top {
+        display: none;
+    }
+
+    .branch-bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width:470px) {
+
+    .polygon-left {
+        width: auto;
+        height: auto;
+        padding: 0;
+        max-height: 800px;
+    }
+
+    .polygon-right {
+        width: auto;
+        max-height: 800px;
+        height: auto;
+        padding: 0;
+    }
+
+    .row#center {
+        top: -70px;
+    }
+
+    ul#main li {
+        height: auto;
+    }
+
+    ul#main {
+        padding: 0 5px;
+    }
+
+    .bs-docs-container {
+        height: auto;
+    }
+
+    h3 {
+        word-break: break-all;
+    }
+
+    tr>td:nth-child(2n) {
+        padding: 15px 20px;
+    }
+}
+
